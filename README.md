@@ -6,7 +6,7 @@ A minimal syntax theme for Atom.
 
 <img
   alt="JS syntax screenshot"
-  src="./screenshot.jpg"
+  src="https://www.dropbox.com/s/e67trvkqnluh4n0/screenshot.jpg?raw=1"
   style="width: 100%;"
 />
 
