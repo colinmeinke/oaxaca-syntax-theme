@@ -2,7 +2,7 @@
 
 A minimal syntax theme for Atom.
 
-**Note**: Currently only supports JS.
+**Syntax support**: JS, JSON.
 
 <img
   alt="JS syntax screenshot"
