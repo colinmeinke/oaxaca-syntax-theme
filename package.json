@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colinmeinke/oaxaca-syntax"
+    "url": "https://github.com/colinmeinke/oaxaca-syntax-theme"
   },
   "bugs": {
-    "url": "https://github.com/colinmeinke/oaxaca-syntax/issues"
+    "url": "https://github.com/colinmeinke/oaxaca-syntax-theme/issues"
   },
   "keywords": [
     "minimal",
