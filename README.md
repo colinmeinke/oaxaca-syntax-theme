@@ -10,4 +10,4 @@ A minimal syntax theme for Atom.
   style="width: 100%;"
 />
 
-**Screenshot**: UI theme - [One Dark](https://github.com/atom/one-dark-ui), Font - [source code pro](https://github.com/adobe-fonts/source-code-pro)
+**Screenshot**: UI theme - [One Dark](https://github.com/atom/one-dark-ui). Font - [source code pro](https://github.com/adobe-fonts/source-code-pro).
