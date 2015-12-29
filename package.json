@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "A minimal syntax theme for Atom",
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"
   },
   "author": {
     "name": "Colin Meinke",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "commitizen": "^2.4.6",
+    "conventional-changelog": "^0.5.3",
     "cz-conventional-changelog": "^1.1.5"
   },
   "config": {
