@@ -6,12 +6,23 @@
   "scripts": {
     "commit": "git-cz"
   },
+  "author": {
+    "name": "Colin Meinke",
+    "email": "hello@colinmeinke.com",
+    "url": "colinmeinke.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinmeinke/oaxaca-syntax"
+  },
+  "bugs": {
+    "url": "https://github.com/colinmeinke/oaxaca-syntax/issues"
+  },
   "keywords": [
     "minimal",
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/oaxaca-syntax",
   "license": "ISC",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
