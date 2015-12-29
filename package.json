@@ -1,0 +1,28 @@
+{
+  "name": "oaxaca-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A minimal syntax theme for Atom",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "keywords": [
+    "minimal",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/oaxaca-syntax",
+  "license": "ISC",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.4.6",
+    "cz-conventional-changelog": "^1.1.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
