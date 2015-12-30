@@ -80,6 +80,30 @@ atom-text-editor::shadow .wrap-guide {
   }
 }
 
+.html {
+  .tag.handlebars {
+    color: @syntax-color-primary;
+
+    .tag.name {
+      color: @syntax-color-primary-compliment;
+    }
+  }
+
+  .tag.name {
+    color: @syntax-color-secondary;
+  }
+
+  .tag.punctuation,
+  .tag.doctype {
+    color: @syntax-color-secondary-compliment;
+  }
+
+  .attribute-name {
+    font-style: italic;
+  }
+
+}
+
 .js {
   .function.console,
   .function.mutator,
