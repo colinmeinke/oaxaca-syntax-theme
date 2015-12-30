@@ -20,8 +20,9 @@
     "url": "https://github.com/colinmeinke/oaxaca-syntax-theme/issues"
   },
   "keywords": [
-    "js",
     "es2015",
+    "js",
+    "json",
     "minimal",
     "syntax",
     "theme"
