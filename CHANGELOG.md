@@ -1,3 +1,13 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.1.0...v1.2.0) (2015-12-30)
+
+
+### Features
+
+* **html:** add html and handlebars syntax highlighting ([8daae80](https://github.com/colinmeinke/oaxaca-syntax-theme/commit/8daae80))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.0.2...v1.1.0) (2015-12-30)
 
