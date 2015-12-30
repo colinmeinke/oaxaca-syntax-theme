@@ -29,6 +29,57 @@ atom-text-editor::shadow .wrap-guide {
   color: @syntax-text-color-highlight;
 }
 
+.css {
+  .function:not(.punctuation):not(.at-rule),
+  .separator ~ .property-name {
+    color: @syntax-color-primary;
+    font-weight: normal;
+  }
+
+  .property-name {
+    color: @syntax-color-secondary;
+  }
+
+  .at-rule.function .function.support,
+  .mixin .entity.function,
+  .attribute-name.placeholder {
+    color: @syntax-text-color !important;
+    font-weight: bold;
+  }
+
+  .variable {
+    font-weight: bold;
+  }
+
+  .at-rule.if > .variable > .variable,
+  .entity.name ~ .variable > .variable,
+  .function .variable,
+  .function + .variable,
+  .function ~ .variable > .variable,
+  .function.name ~ .variable > .variable,
+  .function.support + .punctuation + .variable > .variable,
+  .import + .placeholder,
+  .interpolation,
+  .interpolation .variable,
+  .interpolation ~ .variable,
+  .interpolation ~ .variable > .variable,
+  .parameter,
+  .property-list ~ .variable > .variable,
+  .property-value > .variable,
+  .separator ~ .variable > .variable,
+  .variable .constant,
+  .variable .property-value,
+  .variable .punctuation,
+  .variable .quoted,
+  .variable .unit {
+    font-weight: normal;
+  }
+
+  .important {
+    font-style: italic;
+  }
+}
+
 .js {
   .function.console,
   .function.mutator,
