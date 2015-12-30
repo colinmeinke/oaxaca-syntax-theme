@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.0.2...v1.1.0) (2015-12-30)
+
+
+### Features
+
+* **css:** add css, sass and less syntax highlighting ([1b41178](https://github.com/colinmeinke/oaxaca-syntax-theme/commit/1b41178))
+* **json:** add json syntax highlighting ([9bc160c](https://github.com/colinmeinke/oaxaca-syntax-theme/commit/9bc160c))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.0.1...v1.0.2) (2015-12-29)
 
