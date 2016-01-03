@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.2.0...v1.3.0) (2016-01-03)
+
+
+### Features
+
+* **json:** remove bold styling from json values ([30cce9b](https://github.com/colinmeinke/oaxaca-syntax-theme/commit/30cce9b))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.1.0...v1.2.0) (2015-12-30)
 
