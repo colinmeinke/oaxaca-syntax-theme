@@ -1,3 +1,13 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.3.0...v1.4.0) (2016-06-03)
+
+
+### Features
+
+* increase contrast ([ec5c333](https://github.com/colinmeinke/oaxaca-syntax-theme/commit/ec5c333))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/colinmeinke/oaxaca-syntax-theme/compare/v1.2.0...v1.3.0) (2016-01-03)
 
