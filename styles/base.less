@@ -1,54 +1,109 @@
 @import "syntax-variables";
 
 atom-text-editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+  background-color: @syntax-color-1-main;
+  color: @syntax-color-1-contrast;
 }
 
-.gutter .line-number.cursor-line,
+.tab.active {
+  background-color: @syntax-color-1-main !important;
+  border-image: none !important;
+  border-top: 2px solid @syntax-color-2-main !important;
+
+  .title {
+    background-color: transparent !important;
+    color: @syntax-color-1-contrast;
+  }
+
+  .title,
+  .close-icon {
+    margin-top: -2px;
+  }
+
+  .close-icon {
+    &::before {
+      color: @syntax-color-1-faint !important;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1 !important;
+
+      &::before {
+        color: @syntax-color-1-contrast !important;
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    display: none !important;
+  }
+}
+
+.gutter .line-number.cursor-line {
+  background-color: @syntax-color-2-main;
+  border-left: @syntax-color-2-main !important;
+  color: @syntax-color-2-contrast;
+}
+
 .selection .region {
-  background-color: @syntax-background-color-highlight;
+  background-color: @syntax-color-1-trim;
+  color: yellow !important;
 }
 
 atom-text-editor::shadow .wrap-guide {
-  background-color: @syntax-text-color-faint;
+  background-color: @syntax-color-1-trim;
 }
 
-.comment,
-.gutter .line-number.cursor-line {
-  color: @syntax-text-color-faint;
+.comment {
+  color: @syntax-color-1-faint;
 }
 
-.gutter,
+.gutter {
+  color: @syntax-color-1-faint;
+}
+
 .indent-guide,
 .invisible-character {
-  color: @syntax-text-color-faint-compliment;
+  color: @syntax-color-1-trim;
 }
 
 .cursor {
-  color: @syntax-text-color-highlight;
+  color: @syntax-color-1-contrast;
 }
 
 .css {
   .function:not(.punctuation):not(.at-rule),
   .separator ~ .property-name {
-    color: @syntax-color-primary;
+    color: @syntax-color-2-main;
     font-weight: normal;
   }
 
   .property-name {
-    color: @syntax-color-secondary;
+    color: @syntax-color-3-main;
   }
 
   .at-rule.function .function.support,
   .mixin .entity.function,
   .attribute-name.placeholder {
-    color: @syntax-text-color !important;
+    color: @syntax-color-1-contrast !important;
     font-weight: bold;
   }
 
   .variable {
     font-weight: bold;
+  }
+
+  .keyword.operator,
+  .keyword.important,
+  .keyword.at-rule,
+  .punctuation:not(.entity) {
+    color: @syntax-color-1-faint;
+  }
+
+  .important {
+    font-style: italic;
   }
 
   .at-rule.if > .variable > .variable,
@@ -74,47 +129,42 @@ atom-text-editor::shadow .wrap-guide {
   .variable .unit {
     font-weight: normal;
   }
-
-  .important {
-    font-style: italic;
-  }
 }
 
 .html {
   .tag.handlebars {
-    color: @syntax-color-primary;
+    color: @syntax-color-3-main;
 
     .tag.name {
-      color: @syntax-color-primary-compliment;
+      color: @syntax-color-3-trim;
     }
   }
 
   .tag.name {
-    color: @syntax-color-secondary;
+    color: @syntax-color-3-main;
   }
 
   .tag.punctuation,
   .tag.doctype {
-    color: @syntax-color-secondary-compliment;
+    color: @syntax-color-3-trim;
   }
 
   .attribute-name {
     font-style: italic;
   }
-
 }
 
 .js {
   .function.console,
   .function.mutator,
   .function-call > .function.name {
-    color: @syntax-color-primary;
+    color: @syntax-color-2-main;
     font-weight: normal;
   }
 
   .function-call > .parameters.begin + .parameters.begin,
   .function-call > .parameters.begin + .parameters.begin + .parameters.end {
-    color: @syntax-text-color;
+    color: @syntax-color-1-contrast;
   }
 
   .tag.name,
@@ -123,11 +173,11 @@ atom-text-editor::shadow .wrap-guide {
   .text-warning,
   .text-warning:hover,
   .type.storage {
-    color: @syntax-color-secondary;
+    color: @syntax-color-3-main;
   }
 
   .tag.punctuation {
-    color: @syntax-color-secondary-compliment;
+    color: @syntax-color-3-trim;
   }
 
   .boolean,
@@ -142,23 +192,23 @@ atom-text-editor::shadow .wrap-guide {
 
 .json {
   span:not(.array):not(.value) > .quoted {
-    color: @syntax-color-secondary;
+    color: @syntax-color-3-main;
   }
 }
 
 atom-text-editor .gutter .line-number.git-line-added,
 atom-text-editor::shadow .gutter .line-number.git-line-added {
-  border-left-color: @syntax-color-primary;
+  border-left-color: @syntax-color-2-main;
 }
 
 atom-text-editor .gutter .line-number.git-line-modified,
 atom-text-editor::shadow .gutter .line-number.git-line-modified {
-  border-left-color: @syntax-text-color;
+  border-left-color: @syntax-color-1-faint;
 }
 
 atom-text-editor .gutter .line-number.git-line-removed:before,
 atom-text-editor::shadow .gutter .line-number.git-line-removed:before {
-  border-left-color: @syntax-color-secondary;
+  border-left-color: @syntax-color-3-main;
 }
 
 .status-added,
@@ -170,7 +220,7 @@ atom-text-editor::shadow .gutter .line-number.git-line-removed:before {
 .list-tree li:not(.list-nested-item).status-added.selected,
 .list-group li.list-nested-item.status-added.selected > .list-item,
 .list-tree li.list-nested-item.status-added.selected > .list-item {
-  color: @syntax-color-primary !important;
+  color: @syntax-color-2-main !important;
 }
 
 .status-modified,
@@ -182,6 +232,6 @@ atom-text-editor::shadow .gutter .line-number.git-line-removed:before {
 .list-tree li:not(.list-nested-item).status-modified.selected,
 .list-group li.list-nested-item.status-modified.selected > .list-item,
 .list-tree li.list-nested-item.status-modified.selected > .list-item {
-  color: @syntax-text-color !important;
+  color: @syntax-color-1-contrast !important;
   font-weight: bold;
 }
