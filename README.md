@@ -7,7 +7,7 @@ JSON, Less, Sass.
 
 <img
   alt="JS syntax screenshot"
-  src="https://www.dropbox.com/s/e67trvkqnluh4n0/screenshot.jpg?raw=1"
+  src="https://www.dropbox.com/s/83wd333r0g09a8b/screenshot.jpg?raw=1"
   style="width: 100%;"
 />
 
